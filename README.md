@@ -5,7 +5,7 @@
 Github has an API!!!
 Your goal is to create a rails app that allows a user to input the username of
 a github user and retrieve their name, email, and public repo count from the
-Github API.
+Github API.  Then we spit it out onto the screen for the user.
 
 Github API documentation: https://developer.github.com/v3/users/#get-a-single-user
 
