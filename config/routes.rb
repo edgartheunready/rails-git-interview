@@ -1,8 +1,7 @@
 RailsGitInterview::Application.routes.draw do
+  root "users#search"
   match '/show', to: 'users#show', via: 'get'
-  match '/search', to: 'users#search', via: 'get'
   get "users/show" #todo: figure out how to get an id in here
-  get "users/search"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
