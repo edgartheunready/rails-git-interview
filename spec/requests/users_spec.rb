@@ -1,20 +1,17 @@
 require 'spec_helper'
 
 describe "Users" do
-  describe "GET /users/show" do
-    it "works! (now write some real specs)" do
-      visit show_path
-      expect(page).to have_content("show")
-      expect(page).to have_content("name")
-      expect(page).to have_content("email")
-      expect(page).to have_content("number of repos")
+  subject { page }
+    describe "show page" do
+      before { visit show_path }
+      it { should have_content('show')}
+      it { should have_content('name')}
+      it { should have_content('email')}
+      it { should have_content('number of repos')}
     end
-  end
 
-  describe "GET /users/search" do
-    it "works! (now write some real specs)" do
-      visit root_path
-      expect(page).to have_content("search")
+    describe "GET /users/search" do
+      before { visit root_path }
+      it { should have_content('search')}
     end
-  end
 end
