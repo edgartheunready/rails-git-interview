@@ -3,13 +3,13 @@
 
   <ul>
   	<li>
-  		name
+  		name: <%= @user.name %>
   	</li>
   	<li>
-  		email
+  		email: <%= @user.email.nil? ? 'not available' : @user.email %>
   	</li>
   	<li>
-  		number of repos
+  		number of repos: <%= @user.repo_count %>
   	</li>
   </ul>
 
